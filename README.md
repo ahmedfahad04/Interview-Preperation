@@ -13,4 +13,7 @@ problem solving:
   - age <> 22 / age!=22 [**correct**]
 
 - Use `is` to compare `Equality` with `null` values. Like
+
   - name **is** null
+
+- To find the length of a **string** use `Length` function
