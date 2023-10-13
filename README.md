@@ -10,12 +10,14 @@
 
 - [Problem 5 (Two Pointers)](https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75)
 
+- [Problem 6 (Stack for String REVERSE)](https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75)
+
 ## SQL
 
 Here we'll note down some key points that we must follow in times of
 problem solving:
 
-- Dont use `space` between condition. Like
+- Dont use `space` between condition. Also you can use <> instead of != symbol in SQL.
 
   - age != 22 [**wrong**]
   - age <> 22 / age!=22 [**correct**]
@@ -25,3 +27,5 @@ problem solving:
   - name **is** null
 
 - To find the length of a **string** use `Length` function
+
+- If you use **left join** then the joined table will have all the contents of **first** table
