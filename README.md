@@ -29,3 +29,19 @@ problem solving:
 - To find the length of a **string** use `Length` function
 
 - If you use **left join** then the joined table will have all the contents of **first** table
+
+- Remeber to ues `GROUP BY` when using **AGGREGATE** functions like `COUNT`
+
+## Pandas
+
+- _null_ is defined with **isna()**
+- _Remove duplicate_ is done with **df.drop_duplicates()**
+- _sorting values_ is done with **df['col_nam'].sort_values().values**
+
+## Notes
+
+1. Use `substr` in cpp for slicing.
+   **Example:**
+   name = 'Fahad'
+   cout << name.substr(2,2); -> ha
+   **substr(starting point, length to cut)**
