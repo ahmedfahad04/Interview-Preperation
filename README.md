@@ -12,6 +12,13 @@
 
 - [Problem 6 (Stack for String REVERSE)](https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75)
 
+## CP Quick Notes:
+
+#### Binary Tree
+
+- Try to know if you can traverse based on left or right subtree
+- use **Recursive** or **Iterative** (using stack) solution
+
 ## SQL
 
 Here we'll note down some key points that we must follow in times of
@@ -31,6 +38,8 @@ problem solving:
 - If you use **left join** then the joined table will have all the contents of **first** table
 
 - Remeber to ues `GROUP BY` when using **AGGREGATE** functions like `COUNT`
+
+- To Find difference between dates use `DATEDIFF`
 
 ## Pandas
 
