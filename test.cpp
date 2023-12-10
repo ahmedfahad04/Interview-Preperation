@@ -1,24 +1,27 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
+string largestOddNumber(string num)
 {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cout.tie(0);
-    int t;
-    cin >> t;
-    cin.ignore();
-
-    while (t--)
+    for (int i = num.size() - 1; i > 0; i--)
     {
-
-        vector<int> arr = {1, 2, 3};
-        vector<int> temp = arr;
-        for (auto x : temp)
+        string snum = num.substr(0, i);
+        char ch = snum.back();
+        int n = ch - '0';
+        if (n % 2 != 0)
         {
-
-            cout << x << " ";
+            return snum;
         }
     }
+
+    return "";
+}
+
+int main()
+{
+    string num = "1254";
+
+    // cout << num.back() - '0' + 6;
+
+    cout << largestOddNumber("1234");
 }
