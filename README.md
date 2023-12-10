@@ -18,7 +18,19 @@ The zip() function then combines the elements with the same index from each argu
 
 Map basically passess each element of itr to func for modification. Most common usage is **Taking User's Space separated Input** like this
 
-`list(map(int, input().split(' ')))`
+```
+list(map(int, input().split(' ')))
+```
+
+> filter(func, itr)
+
+Basic difference with map is that, `map` consider whole List and output contains the whole List manupulated by the Function.
+Whereas `filter` can shorten the List based on the **Filter Condition** provided in the 1st arg.
+
+```
+scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+over_75 = list(map(lambda x: x>75, scores)) # [90, 76, 88, 81]
+```
 
 ### C++
 
