@@ -2,15 +2,33 @@
 
 ## Competitive Programming
 
-### LeetCode 75 Problem list
+## Language Tricks
 
-- [Problem 3](https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/?envType=study-plan-v2&envId=leetcode-75)
+### Python
 
-- [Problem 4](https://leetcode.com/problems/can-place-flowers/?envType=study-plan-v2&envId=leetcode-75)
+> zip(\*itr)
 
-- [Problem 5 (Two Pointers)](https://leetcode.com/problems/reverse-vowels-of-a-string/?envType=study-plan-v2&envId=leetcode-75)
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+zip(*matrix) => It'll **Transpose** the matrix.
+How? =>
+The *matrix syntax is used for unpacking the rows of the matrix. It's equivalent to passing each row of the matrix as a separate argument to the zip() function.
+The zip() function then combines the elements with the same index from each argument into tuples. In this case, it combines the first elements of each row, the second elements, and so on.
 
-- [Problem 6 (Stack for String REVERSE)](https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=leetcode-75)
+> map(func,itr)
+
+Map basically passess each element of itr to func for modification. Most common usage is **Taking User's Space separated Input** like this
+
+`list(map(int, input().split(' ')))`
+
+### C++
+
+> substr(start_point, length_to_be_cosidered)
+
+Use `substr` in cpp for slicing.
+**Example:**
+name = 'Fahad'
+cout << name.substr(2,2); -> ha
+**substr(starting point, length to cut)**
 
 ## CP Quick Notes:
 
@@ -18,6 +36,13 @@
 
 - Try to know if you can traverse based on left or right subtree
 - use **Recursive** or **Iterative** (using stack) solution
+- Three Types of traversal are there
+
+  - **InOrder:** Left Subtree > Root Node > Right Subtree
+  - **PreOrder:** Root Node > Left Subtree > Right Subtree
+  - **PostOrder:** Left Subtree > Right Subtree > Root Node
+
+- Find New way of Tree Traversal: `Morris Traversal`
 
 ## SQL
 
@@ -46,11 +71,3 @@ problem solving:
 - _null_ is defined with **isna()**
 - _Remove duplicate_ is done with **df.drop_duplicates()**
 - _sorting values_ is done with **df['col_nam'].sort_values().values**
-
-## Notes
-
-1. Use `substr` in cpp for slicing.
-   **Example:**
-   name = 'Fahad'
-   cout << name.substr(2,2); -> ha
-   **substr(starting point, length to cut)**
