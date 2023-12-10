@@ -8,17 +8,21 @@
 
 > zip(\*itr)
 
+```python
 matrix = [[1,2,3],[4,5,6],[7,8,9]]
-zip(*matrix) => It'll **Transpose** the matrix.
+zip(*matrix) #[(1, 4, 7), (2, 5, 8), (3, 6, 9)]
+```
+
+=> It'll **Transpose** the matrix.
 How? =>
-The *matrix syntax is used for unpacking the rows of the matrix. It's equivalent to passing each row of the matrix as a separate argument to the zip() function.
+The \*matrix syntax is used for unpacking the rows of the matrix. It's equivalent to passing each row of the matrix as a separate argument to the zip() function.
 The zip() function then combines the elements with the same index from each argument into tuples. In this case, it combines the first elements of each row, the second elements, and so on.
 
 > map(func,itr)
 
 Map basically passess each element of itr to func for modification. Most common usage is **Taking User's Space separated Input** like this
 
-```
+```python
 list(map(int, input().split(' ')))
 ```
 
@@ -27,9 +31,17 @@ list(map(int, input().split(' ')))
 Basic difference with map is that, `map` consider whole List and output contains the whole List manupulated by the Function.
 Whereas `filter` can shorten the List based on the **Filter Condition** provided in the 1st arg.
 
-```
+```python
 scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
 over_75 = list(map(lambda x: x>75, scores)) # [90, 76, 88, 81]
+```
+
+> has()
+
+Using `hash()` in comparator operators is a bit **faster**
+
+```python
+hash(str('Fahads')==str('Fahad'))
 ```
 
 ### C++
