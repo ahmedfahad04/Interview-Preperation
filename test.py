@@ -1,3 +1,7 @@
-ids = ['fahad04', 'kabir12', 'akmal05']
+import heapq
+import time
 
-print(sorted(ids, key=lambda x: x[-2:], reverse=True))
+test = [2, 5, 4, 1, 6]
+# print(sorted(test))
+heapq.heapify(test)
+print(time test)

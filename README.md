@@ -6,6 +6,10 @@
 
 ### Python
 
+> heapify(\*itr)
+
+heapify runs in linear time, and heappop is **O(logN)**, so **O(N)** is correct. It's efficient for sorting elements as usually the `sorted()` has complexity of **O(nlogn)** where as `heapify()` has complexity of **O(N)**.
+
 > zip(\*itr)
 
 ```python
@@ -36,7 +40,7 @@ scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
 over_75 = list(map(lambda x: x>75, scores)) # [90, 76, 88, 81]
 ```
 
-> has()
+> hash()
 
 Using `hash()` in comparator operators is a bit **faster**
 
