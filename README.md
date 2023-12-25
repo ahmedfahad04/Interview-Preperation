@@ -6,6 +6,10 @@
 
 ### Python
 
+> @cache
+
+It cache up the value to speed up the execution of a function.
+
 > heapify(\*itr)
 
 heapify runs in linear time, and heappop is **O(logN)**, so **O(N)** is correct. It's efficient for sorting elements as usually the `sorted()` has complexity of **O(nlogn)** where as `heapify()` has complexity of **O(N)**.

@@ -48,6 +48,33 @@ class LinkedList:
 
             n.ref = new_node
 
+    def delFirst(self):
+
+        self.head = self.head.ref
+
+    def delMiddle(self, lval):
+
+        curr = self.head
+
+        while True:
+
+            if lval == curr.data:
+                curr.ref = curr.ref.ref
+                break
+
+    def delLast(self):
+
+        curr = self.head
+
+        while True:
+            if curr.ref.ref == None:
+                curr.ref = None
+                break
+
+            curr = curr.ref
+
+        # return self
+
     def findElement(self, value):
         n = self.head
         while n is not None:
@@ -59,6 +86,19 @@ class LinkedList:
 
         print(f'{value} not found')
         return False
+
+    def size(self):
+
+        length = 1
+        curr = self.head
+        while True:
+            if curr.ref == None:
+                break
+
+            length += 1
+            curr = curr.ref
+
+        return length
 
     def printList(self):
         if self.head == None:
@@ -74,9 +114,14 @@ class LinkedList:
 
 ll = LinkedList()
 
+ll.addFirst(50)
 ll.addLast(1)
+ll.addLast(501)
 ll.addLast(22)
+# ll.delMiddle(50)
+print(ll.size())
+# ll.delFirst()
 # ll.addLast(333)
 # ll.findElement(3)
 # ll.addInMiddle(22, 333, 50)
-ll.printList()
+# ll.printList()
