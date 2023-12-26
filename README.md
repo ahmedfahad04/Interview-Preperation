@@ -229,6 +229,10 @@ cout << name.substr(2,2); -> ha
 
 - Find New way of Tree Traversal: `Morris Traversal`
 
+#### Dynamci Programming (DP)
+
+- When our problem solution has repeatative steps, then we use DP to avoid recurring steps.
+
 ## SQL
 
 Here we'll note down some key points that we must follow in times of
